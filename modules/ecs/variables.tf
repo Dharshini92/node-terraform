@@ -13,10 +13,6 @@ variable "node_app_task_family" {
   type        = string
 }
 
-variable "ecr_repo_url" {
-  description = "ECS Repo URL"
-  type        = string     
-}
 
 variable "container_port" {
   description = "Container Port"
