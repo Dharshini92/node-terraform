@@ -19,7 +19,6 @@ module "ecsCluster" {
     node_app_cluster_name           = local.node_app_cluster_name
     availability_zones              = local.availability_zones
     node_app_task_family            = local.node_app_task_family
-    ecr_repo_url                    = module.ecrRepo.repository_url
     container_port                  = local.container_port
     node_app_task_name              = local.node_app_task_name
     ecs_task_execution_role_name    = local.ecs_task_execution_role_name
