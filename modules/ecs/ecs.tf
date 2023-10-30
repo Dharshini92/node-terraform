@@ -23,7 +23,7 @@ resource "aws_ecs_task_definition" "node_app_task" {
   [
     {
       "name": "${var.node_app_task_name}",
-      "image": "${var.ecr_repo_url}",
+      "image": "170863172186.dkr.ecr.ap-south-1.amazonaws.com/node_app_ecr_repo:latest",
       "essential": true,
       "portMappings": [
         {
